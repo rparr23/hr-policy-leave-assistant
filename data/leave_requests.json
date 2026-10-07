@@ -1,0 +1,26 @@
+[
+  {
+    "id": "LV-20400",
+    "employee_email": "james.carter@contoso.com",
+    "leave_type": "annual",
+    "start_date": "2026-10-26",
+    "end_date": "2026-10-28",
+    "hours": 24,
+    "reason": "Family visit",
+    "status": "pending",
+    "approver_email": "priya.shah@contoso.com",
+    "submitted_at": "2026-10-01T15:02:00Z"
+  },
+  {
+    "id": "LV-20401",
+    "employee_email": "maria.lopez@contoso.com",
+    "leave_type": "sick",
+    "start_date": "2026-09-14",
+    "end_date": "2026-09-14",
+    "hours": 4,
+    "reason": "Doctor appointment",
+    "status": "approved",
+    "approver_email": "priya.shah@contoso.com",
+    "submitted_at": "2026-09-10T09:30:00Z"
+  }
+]

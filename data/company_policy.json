@@ -1,0 +1,23 @@
+{
+  "_note": "Demo company policy (Contoso). Replace with the client's handbook values.",
+  "holidays_2026": ["2026-01-01", "2026-05-25", "2026-07-03", "2026-09-07", "2026-11-26", "2026-11-27", "2026-12-25"],
+  "leave_types": {
+    "annual": {"label": "Annual leave (PTO)", "uses_balance": "annual", "requires_hr_case": false},
+    "sick": {"label": "Sick leave", "uses_balance": "sick", "requires_hr_case": false, "doc_required_after_days": 3},
+    "bereavement": {"label": "Bereavement leave", "uses_balance": null, "max_days": 5, "requires_hr_case": false},
+    "jury_duty": {"label": "Jury duty", "uses_balance": null, "requires_hr_case": false, "doc_required_after_days": 0},
+    "unpaid": {"label": "Unpaid leave", "uses_balance": null, "requires_hr_case": false},
+    "parental": {"label": "Parental leave", "uses_balance": null, "requires_hr_case": true},
+    "medical": {"label": "Medical / FMLA leave", "uses_balance": null, "requires_hr_case": true}
+  },
+  "sick_leave_days_per_year": {"full_time": 6, "part_time": 0},
+  "hours_per_day": {"full_time": 8, "part_time": 4},
+  "travel": {
+    "flight_advance_notice_days": 14,
+    "business_class_min_flight_hours": 6,
+    "finance_approval_threshold_usd": 2500,
+    "international_requires": "vp",
+    "per_diem_usd": {"default": 75, "New York": 92, "San Francisco": 90, "Chicago": 85, "London": 110}
+  },
+  "case_sla_hours": {"high": 4, "normal": 24}
+}

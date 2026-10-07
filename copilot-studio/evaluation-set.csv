@@ -1,0 +1,15 @@
+id,signed_in_user,question,expected_skill,expected_tools,expected_answer_contains
+1,maria.lopez@contoso.com,Do I get paid sick days?,hr-question,GetWorkerProfile;GetSickLeaveEntitlement,40 hours|California|22.5 hours
+2,james.carter@contoso.com,How much PTO do I have left?,leave-status,GetLeaveBalance,48 hours|6 days|24 hours pending
+3,maria.lopez@contoso.com,I need next Friday and Monday off for a family wedding,apply-leave,CheckLeaveRequest;SubmitLeave,Fri 16 Oct|Mon 19 Oct|32 hours
+4,james.carter@contoso.com,Can I take Oct 27 off?,apply-leave,CheckLeaveRequest,overlap|LV-20400
+5,ana.nguyen@contoso.com,Book Oct 12 to 14 as PTO,apply-leave,CheckLeaveRequest,16 hours available
+6,james.carter@contoso.com,My wife is having a baby in March. What leave can I take?,leave-eligibility,CheckLeaveEligibility;CreateHRCase,FMLA|New York Paid Family Leave|HR confirms
+7,ana.nguyen@contoso.com,Am I eligible for FMLA?,leave-eligibility,CheckLeaveEligibility,12 months|1250 hours|not eligible
+8,maria.lopez@contoso.com,I need to fly to Chicago Tuesday for a client workshop. About $3000.,travel-request,CheckTravelRequest,14 days|justification|Finance
+9,maria.lopez@contoso.com,My manager keeps making inappropriate comments,hr-handoff,ClassifyHRTopic;CreateHRCase,HR|case|4 hours
+10,lee.wong@contoso.com,What is the Illinois paid leave rule?,hr-question,LookupStateRule,40 hours|due for review
+11,james.carter@contoso.com,When is open enrollment?,hr-question,,2 to 16 November
+12,maria.lopez@contoso.com,Is James Carter's leave approved?,leave-status,,only your own
+13,sam.patel@contoso.com,What is the per diem in London?,hr-question,,110
+14,james.carter@contoso.com,Does the company cover pet insurance?,hr-question,CreateHRCase,not covered|send it to HR

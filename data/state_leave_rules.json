@@ -1,0 +1,105 @@
+{
+  "_note": "Demo reference table for 5 states. Summaries are simplified and must be reviewed by HR compliance or counsel before production use. Each rule has an owner-reviewed date; rules older than 12 months are flagged for re-verification.",
+  "employer_headcount": 1200,
+  "rules": [
+    {
+      "state": "CA",
+      "leave_type": "paid_sick",
+      "name": "California Paid Sick Leave",
+      "summary": "Employees accrue at least 1 hour of paid sick leave per 30 hours worked; employers must allow use of at least 40 hours (5 days) per year.",
+      "accrual": {"hours_earned": 1, "per_hours_worked": 30},
+      "min_hours_per_year": 40,
+      "min_days_per_year": 5,
+      "source_url": "https://www.dir.ca.gov/dlse/Paid_Sick_Leave.htm",
+      "effective_date": "2024-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "CA",
+      "leave_type": "family_medical",
+      "name": "California Family Rights Act (CFRA) and Paid Family Leave",
+      "summary": "CFRA gives up to 12 weeks of job-protected leave to employees with 12 months of service and 1,250 hours in the past 12 months (employers with 5+ employees). State Paid Family Leave provides partial wage replacement for up to 8 weeks.",
+      "eligibility": {"min_months_service": 12, "min_hours_12_months": 1250},
+      "job_protected_weeks": 12,
+      "paid_weeks": 8,
+      "source_url": "https://calcivilrights.ca.gov/family-medical-pregnancy-leave/",
+      "effective_date": "2021-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "NY",
+      "leave_type": "paid_sick",
+      "name": "New York Paid Sick Leave",
+      "summary": "Employees accrue 1 hour per 30 hours worked. Employers with 100+ employees must provide up to 56 hours per year; 5 to 99 employees, up to 40 hours.",
+      "accrual": {"hours_earned": 1, "per_hours_worked": 30},
+      "min_hours_by_headcount": [{"min_employees": 100, "hours": 56}, {"min_employees": 5, "hours": 40}],
+      "source_url": "https://www.ny.gov/new-york-paid-sick-leave/new-york-paid-sick-leave",
+      "effective_date": "2021-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "NY",
+      "leave_type": "family_medical",
+      "name": "New York Paid Family Leave",
+      "summary": "Up to 12 weeks of job-protected, paid leave at 67% of average weekly wage (capped). Eligible after 26 consecutive weeks for employees working 20+ hours a week, or 175 days for those working under 20 hours.",
+      "eligibility": {"min_weeks_if_20_plus_hours": 26, "min_days_if_under_20_hours": 175},
+      "job_protected_weeks": 12,
+      "paid_weeks": 12,
+      "source_url": "https://paidfamilyleave.ny.gov/eligibility",
+      "effective_date": "2021-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "WA",
+      "leave_type": "paid_sick",
+      "name": "Washington Paid Sick Leave",
+      "summary": "Employees accrue at least 1 hour of paid sick leave per 40 hours worked, with up to 40 unused hours carried over each year.",
+      "accrual": {"hours_earned": 1, "per_hours_worked": 40},
+      "min_hours_per_year": 0,
+      "source_url": "https://lni.wa.gov/workers-rights/leave/paid-sick-leave/",
+      "effective_date": "2018-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "WA",
+      "leave_type": "family_medical",
+      "name": "Washington Paid Family and Medical Leave",
+      "summary": "Employees who worked 820 hours in the qualifying period can take up to 12 weeks of paid family or medical leave (up to 16 combined).",
+      "eligibility": {"min_hours_qualifying_period": 820},
+      "job_protected_weeks": 12,
+      "paid_weeks": 12,
+      "source_url": "https://paidleave.wa.gov/",
+      "effective_date": "2020-01-01",
+      "last_reviewed": "2026-07-01"
+    },
+    {
+      "state": "IL",
+      "leave_type": "paid_sick",
+      "name": "Illinois Paid Leave for All Workers Act",
+      "summary": "Employees accrue 1 hour of paid leave per 40 hours worked, up to at least 40 hours a year, usable for any reason. Chicago and Cook County have their own ordinances.",
+      "accrual": {"hours_earned": 1, "per_hours_worked": 40},
+      "min_hours_per_year": 40,
+      "source_url": "https://labor.illinois.gov/faqs/paidleaveforallworkersactfaqs.html",
+      "effective_date": "2024-01-01",
+      "last_reviewed": "2025-06-15"
+    },
+    {
+      "state": "TX",
+      "leave_type": "paid_sick",
+      "name": "Texas (no state paid sick leave law)",
+      "summary": "Texas has no statewide paid sick leave requirement; company policy applies.",
+      "min_hours_per_year": 0,
+      "source_url": "https://www.twc.texas.gov/news/texas-employers-sick-leave",
+      "effective_date": "2020-01-01",
+      "last_reviewed": "2026-07-01"
+    }
+  ],
+  "federal": {
+    "name": "Family and Medical Leave Act (FMLA)",
+    "summary": "Up to 12 weeks of unpaid, job-protected leave per 12 months for eligible employees.",
+    "eligibility": {"min_months_service": 12, "min_hours_12_months": 1250, "min_employees_within_75_miles": 50},
+    "job_protected_weeks": 12,
+    "source_url": "https://www.dol.gov/agencies/whd/fmla",
+    "last_reviewed": "2026-07-01"
+  }
+}
